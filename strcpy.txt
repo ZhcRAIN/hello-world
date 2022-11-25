@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+char *strcpy(char *dest, const char *src)
+{
+    char *p = dest;
+    while ((*dest++=*src++)!='\0');
+    return p;
+}
+
+int main()
+{
+    char *str1 = "adbcdd"; 
+    char str2[15];
+    strcpy(str2,str1);
+    printf("%s",str2);
+    return 0;
+}
